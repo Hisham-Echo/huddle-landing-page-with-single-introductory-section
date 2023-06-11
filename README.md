@@ -90,3 +90,9 @@ We love receiving feedback! We're always looking to improve our challenges and o
 This challenge is completely free. Please share it with anyone who will find it useful for practice.
 
 **Have fun building!** 🚀
+
+**Source:**
+https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0/hub
+
+**Live-Preview:**
+https://hisham3243.github.io/huddle-landing-page-with-single-introductory-section/
