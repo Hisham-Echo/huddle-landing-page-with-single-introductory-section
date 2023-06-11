@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+/**! MOBILE FIRST !**/
+/* START Global */
+:root {
+    /* ##Colors */
+    /* ###Primary */
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+}
+
+* {
+    transition: color 0.25s ease-in-out;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fafafa;
+    -webkit-transition: color 0.25s ease-in-out;
+    -moz-transition: color 0.25s ease-in-out;
+    -ms-transition: color 0.25s ease-in-out;
+    -o-transition: color 0.25s ease-in-out;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    background: center top scroll url(images/bg-mobile.svg) var(--Violet)
+        no-repeat;
+    background-size: 100vw;
+    padding: 40px 35px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+}
+
+@media (min-width: 800px) {
+    body {
+        place-items: start;
+        padding: 60px;
+        background-position: left;
+        background-size: contain;
+        background-image: url(images/bg-desktop.svg);
+    }
+}
+
+header,
+main {
+    margin-bottom: 40px;
+}
+/* END Global */
+/* /////////////////////////////////////////////////////// */
+/* START header */
+header {
+    max-width: 1200px;
+    place-self: start;
+}
+
+header img {
+    max-width: 50%;
+}
+
+@media (min-width: 800px) {
+    header img {
+        margin-bottom: 40px;
+        max-width: 85%;
+    }
+}
+/* END header */
+/* /////////////////////////////////////////////////////// */
+/* START main */
+main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    text-align: center;
+}
+
+main .img {
+    margin-bottom: 50px;
+}
+
+main .img img {
+    width: 100%;
+}
+
+main .text h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+main .text p {
+    line-height: 1.5;
+}
+
+main .text h1,
+main .text p {
+    margin-bottom: 20px;
+}
+
+main .text button {
+    border: none;
+    padding: 15px;
+    width: 200px;
+    color: var(--Violet);
+    box-shadow: 2px 5px 5px 0 #0003;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+main .text button:hover {
+    background-color: var(--Soft-Magenta);
+    color: #fafafa;
+}
+
+@media (min-width: 800px) {
+    main {
+        margin: 0;
+    }
+
+    main .img {
+        max-width: initial;
+        width: 60%;
+        text-align: left;
+        margin: 0;
+    }
+
+    main .text {
+        margin-top: 50px;
+        align-self: start;
+        text-align: left;
+        max-width: 35%;
+    }
+
+    main .text h1 {
+        font-size: 2.3rem;
+    }
+
+    main .text button {
+        width: 180px;
+        font-size: 1.1rem;
+    }
+}
+/* END main */
+/* /////////////////////////////////////////////////////// */
+/* START footer */
+footer {
+    padding-top: 25px;
+    text-align: center;
+}
+
+footer i {
+    width: 35px;
+    height: 35px;
+    font-size: 15px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+footer i:not(i:last-child) {
+    margin-right: 8px;
+}
+
+footer i:hover {
+    border-color: var(--Soft-Magenta);
+    color: var(--Soft-Magenta);
+}
+
+@media (min-width: 800px) {
+    footer {
+        padding-top: 0;
+        place-self: end;
+    }
+}
+/* END footer */
