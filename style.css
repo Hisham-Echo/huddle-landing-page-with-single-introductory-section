@@ -35,6 +35,7 @@ body {
 
 @media (min-width: 800px) {
     body {
+        height: 100vh;
         place-items: start;
         padding: 60px;
         background-position: left;
