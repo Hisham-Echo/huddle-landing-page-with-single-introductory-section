@@ -60,8 +60,10 @@ header img {
 }
 
 @media (min-width: 800px) {
+    header {
+        margin-bottom: 50px;
+    }
     header img {
-        margin-bottom: 40px;
         max-width: 85%;
     }
 }
@@ -71,8 +73,6 @@ header img {
 main {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
     max-width: 100%;
     text-align: center;
 }
@@ -120,11 +120,12 @@ main .text button:hover {
 @media (min-width: 800px) {
     main {
         margin: 0;
+        gap: 50px;
     }
 
     main .img {
         max-width: initial;
-        width: 60%;
+        width: 50%;
         text-align: left;
         margin: 0;
     }
@@ -133,11 +134,16 @@ main .text button:hover {
         margin-top: 50px;
         align-self: start;
         text-align: left;
-        max-width: 35%;
+        width: 45%;
     }
 
     main .text h1 {
-        font-size: 2.3rem;
+        padding-right: 50px;
+        font-size: 2.5rem;
+    }
+
+    main .text p {
+        padding-right: 60px;
     }
 
     main .text button {
