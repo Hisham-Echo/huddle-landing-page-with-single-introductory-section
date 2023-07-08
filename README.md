@@ -95,4 +95,4 @@ This challenge is completely free. Please share it with anyone who will find it 
 https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0/hub
 
 **Live-Preview:**
-https://hisham3243.github.io/huddle-landing-page-with-single-introductory-section/
+https://hisham-echo.github.io/huddle-landing-page-with-single-introductory-section/
